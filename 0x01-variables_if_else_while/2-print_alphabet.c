@@ -9,9 +9,13 @@ int main(void)
 
 	char c;
 
-	for (c = 'a'; c <= 'z'; c++)
-		putchar(c);
-		putchar('\n');
+	c = 97;
 
+	while (c < 123)
+	{
+		putchar(c);
+		putchar(10);
+		c++;
+	}
 return (0);
 }
