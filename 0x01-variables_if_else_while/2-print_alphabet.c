@@ -14,7 +14,6 @@ int main(void)
 	while (c < 123)
 	{
 		putchar(c);
-		putchar(10);
 		c++;
 	}
 return (0);
