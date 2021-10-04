@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 /**
  *main - Display numbers with characters
  *x: code ascii number 48
