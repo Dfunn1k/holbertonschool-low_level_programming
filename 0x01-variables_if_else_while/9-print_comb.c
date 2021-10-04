@@ -14,18 +14,22 @@ int main(void)
 
 	while (x < 58)
 	{
-		if (x != 57)
+		if (x < 58)
 		{
 			putchar(x);
-			putchar(32);
-			putchar(44);
-			x++;
+			if (x != 57)
+				putchar(32);
+				putchar(44);
+				x++;
+			else
+			{
+				x++;
+			}
 		}
 		else
 		{
-			putchar(x);
-			x++;
 		}
 	}
+putchar(10);
 return (0);
 }
