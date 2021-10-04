@@ -1,4 +1,4 @@
-#include <stdio.h>
+i#include <stdio.h>
 /**
  *main - Display numbers with characters
  *x: code ascii number 48
@@ -24,6 +24,7 @@ int main(void)
 		else
 		{
 			putchar(x);
+			x++;
 		}
 	}
 return (0);
