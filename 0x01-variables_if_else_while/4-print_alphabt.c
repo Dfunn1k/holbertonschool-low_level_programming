@@ -14,13 +14,14 @@ int main(void)
 
 	while (var1 < 123)
 	{
-		if (var1 != 101 || var1 != 113)
+		if (var1 != 101 && var1 != 113)
 		{
 			putchar(var1);
 			var1++;
 		}
 		else
 		{
+			var1++;
 		}
 	}
 putchar(10);
