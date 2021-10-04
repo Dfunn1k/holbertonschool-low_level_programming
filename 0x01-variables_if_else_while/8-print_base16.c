@@ -21,7 +21,7 @@ int main(void)
 
 	while (y < 103)
 	{
-		puthchar(y);
+		putchar(y);
 		y++;
 	}
 putchar(10);
