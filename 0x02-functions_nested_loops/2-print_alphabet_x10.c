@@ -21,9 +21,9 @@ void print_alphabet_x10(void)
 			_putchar(cont1);
 			cont1++;
 		}
-		_putchar('\n');	
+		_putchar('\n');
 		cont1 = 97;
-	cont2++;	
+	cont2++;
 	}
 
 }
