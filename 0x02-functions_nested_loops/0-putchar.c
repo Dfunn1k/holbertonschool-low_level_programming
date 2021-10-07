@@ -1,9 +1,10 @@
 #include "main.h"
-/** 
- *
- *
- *
- *
+/**
+ *main - Print _putchar
+ *void
+ *Description: Print _putchar with the some function
+ *dont permissed use stdio.h
+ *Return: 0 value
  */
 int main(void)
 {
