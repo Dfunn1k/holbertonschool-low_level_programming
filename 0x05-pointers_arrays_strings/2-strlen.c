@@ -1,0 +1,13 @@
+#include "main.h"
+#include <string.h>
+/**
+ *_strlen - calculated the length of a string
+ *@s: a char
+ *
+ *
+ *Return: void
+ */
+int _strlen(char *s)
+{
+	return (strlen(s));
+}
