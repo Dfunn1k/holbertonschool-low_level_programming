@@ -2,7 +2,7 @@
 int fun_srqt(int n, int a);
 
 /**
- *_pow_recursion - x raised to the power of y
+ *fun_srqt - x raised to the power of y
  *@n: integer number
  *@a: integer number
  *
@@ -15,8 +15,8 @@ int fun_srqt(int n, int a)
 	else if (n < 0)
 		return (-1);
 
-	n-=a;
-        return (fun_srqt(n, a + 2));
+	n -= a;
+	return (fun_srqt(n, a + 2));
 }
 
 /**
@@ -30,7 +30,6 @@ int _sqrt_recursion(int n)
 	if (n == 0)
 		return (0);
 	else if (n < 0)
-        	return (-1);
+		return (-1);
 	return (fun_srqt(n, 1));
-		
 }
