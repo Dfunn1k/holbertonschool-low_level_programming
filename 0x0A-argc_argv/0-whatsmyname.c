@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * mynameis - a program that prints its name
+ *main - a program that prints its name
  *@argc: name of the function
  *@argv: array of the strings
  *
