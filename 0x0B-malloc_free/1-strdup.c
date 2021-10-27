@@ -19,7 +19,7 @@ int _strlen(char *s)
 	}
 	return (i);
 }
-/**     
+/**
  * _strdup - Function to reserve memory and copy string
  * @str: Parameter
  * Return: Return value
