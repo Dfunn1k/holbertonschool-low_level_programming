@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
 /**
  *op_add - return the sum of a and b
  *@a: integer number
