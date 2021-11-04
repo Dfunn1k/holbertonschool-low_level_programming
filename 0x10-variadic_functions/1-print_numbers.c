@@ -10,8 +10,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 
-	if (n > 0)
-	{
 		va_list parametros;
 
 		va_start(parametros, n);
@@ -23,6 +21,4 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 		va_end(parametros);
 		printf("\n");
-	}
-	printf("\n");
 }
