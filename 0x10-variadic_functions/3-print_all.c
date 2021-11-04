@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 			case 'f': /* float */
 				printf("%f", va_arg(list, double));
 				break;
-			default : /* if it does not comply with the cases */
+			default: /* if it does not comply with the cases */
 				x++;
 				continue;
 		}
