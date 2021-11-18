@@ -1,32 +1,34 @@
 #include <stdio.h>
 /**
- *
- *
- *
- *
+ *main - function display all posible different combinations of two digits
+ *Return: 1(success)
  */
 int main(void)
 {
-	int var1, var2;
+	int num1, num2, tmp = 0;
 
-	var1 = ;
-	var2 = 48;
+	num1 = 48;
+	num2 = 48;
+	tmp = num2;
 
-	while (var1 < 58)
+	while (num1 <= 57)
 	{
-		if (var1 != var2)
+		while (num2 <= 57)
 		{
-			putchar(var1);
-			putchar(var2);
-			var2++;
-
+			if (num1 != num2)
+			{
+				putchar(num1);
+				putchar(num2);
+				if (num1 == 56 && num2 == 57)
+					break;
+				putchar(44);
+			}
+			num2++;
 		}
-		else
-		{
-			var1++;
-		}
-		
+	num2 = tmp + 1;
+	tmp = num2;
+	num1++;
 	}
-
+putchar(10);
 return (0);
 }
