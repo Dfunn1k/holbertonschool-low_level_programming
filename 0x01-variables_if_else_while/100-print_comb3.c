@@ -22,6 +22,7 @@ int main(void)
 				if (num1 == 56 && num2 == 57)
 					break;
 				putchar(44);
+				putchar(' ');
 			}
 			num2++;
 		}
