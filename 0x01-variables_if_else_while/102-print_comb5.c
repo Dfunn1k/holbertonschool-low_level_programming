@@ -21,16 +21,10 @@ int main(void)
 				while (z <= 57)
 				{
 					if (x > 48 && (y == 48 && z == 48))
-					{
-						z++;
-						continue;
-					}
+						z++, continue;
 
 					if (x == z)
-					{
-						z++;	
-						continue;
-					}
+						z++, continue;
 					putchar(w);
 					putchar(x);
 					putchar(32);
@@ -42,16 +36,13 @@ int main(void)
 					putchar(32);
 					z++;
 				}
-			z = 48;
-			y++;
+			z = 48, y++;
 			}
 		z = x + 1;
-		y = w;	
-		x++;
+		y = w, x++;
 		}
-	x = 48;	
-	w++;	
+	x = 48, w++;
 	}
 putchar(10);
 return (0);
-} 
+}
