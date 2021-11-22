@@ -20,7 +20,7 @@ int main(void)
 						z++;
 						continue;
 					}
-					if (x == z)
+					if (w == y && x == z)
 					{
 						z++;
 						continue;
