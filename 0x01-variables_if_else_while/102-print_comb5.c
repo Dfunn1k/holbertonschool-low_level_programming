@@ -5,12 +5,7 @@
  */
 int main(void)
 {
-	int w, x, y, z;
-
-	w = 48;
-	x = 48;
-	y = 48;
-	z = 48;
+	int w = 48, x = 48, y = 48, z = 48;
 
 	while (w <= 57)
 	{
@@ -21,10 +16,15 @@ int main(void)
 				while (z <= 57)
 				{
 					if (x > 48 && (y == 48 && z == 48))
-						z++, continue;
-
+					{
+						z++;
+						continue;
+					}
 					if (x == z)
-						z++, continue;
+					{
+						z++;
+						continue;
+					}
 					putchar(w);
 					putchar(x);
 					putchar(32);
