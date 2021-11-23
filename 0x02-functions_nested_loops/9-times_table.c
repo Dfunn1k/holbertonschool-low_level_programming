@@ -22,8 +22,14 @@ void times_table(void)
 			}
 			if (first_digit <= 0)
 			{
-				_putchar(32);
-				_putchar(mul);
+				if (count == 0)
+				{
+					_putchar(mul);
+				} else
+				{
+					_putchar(32);
+					_putchar(mul);
+				}
 			}
 			if (count != 9)
 			{
