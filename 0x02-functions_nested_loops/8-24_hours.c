@@ -7,14 +7,14 @@ void jack_bauer(void)
 {
 	int w, x, y, z;
 
-    w = 48;
-    x = 48;
-    y = 48;
-    z = 48;
+	w = 48;
+	x = 48;
+	y = 48;
+	z = 48;
 
 	while (w < 51)
 	{
-		while (x < 52)
+		while (x < 58)
 		{
 			while (y < 54)
 			{
@@ -26,6 +26,11 @@ void jack_bauer(void)
 					_putchar(y);
 					_putchar(z);
 					_putchar(10);
+					if (w == 50 && x == 51 && y == 53 && z == 57)
+					{
+						x = 58;
+						break;
+					}
 					z++;
 				}
 			z = 48;
@@ -35,6 +40,6 @@ void jack_bauer(void)
 		x++;
 		}
 	x = 48;
-	w++;	
-	}	
-}		
+	w++;
+	}
+}
