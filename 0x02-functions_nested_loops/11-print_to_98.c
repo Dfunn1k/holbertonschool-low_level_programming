@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 /**
  * print_to_98 - Function to print lower alphabet
  *@n: Parameter
