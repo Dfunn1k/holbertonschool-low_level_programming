@@ -1,26 +1,24 @@
-#include <stdio.h>
-#include "main.h"
+#include "holberton.h"
 /**
- **_strcpy - Copie the string pointed to by src
- *@dest: pointer to char
- *@src: pointer to char
+ * _strcpy - Function to print a complete string in reverse
+ * @dest: Parameter
+ * @src: Parameter
+ * Return: Return value "dest"
  */
 char *_strcpy(char *dest, char *src)
 {
 	int i;
+	int a;
 
-	if (n >= 0)
+	i = 0;
+	while (src[i] != 0)
 	{
-		for (i = 0; i < n; i++)
-		{
-			printf("%d", a[i]);
-			if (i == n - 1)
-				break;
-			printf(", ");
-		}
-		printf("\n");
-	} else
-	{
-	printf("\n");
+		i++;
 	}
+	a = 0;
+		for (a = 0; a <= i ; a++)
+		{
+			dest[a] = src[a];
+		}
+		return (dest);
 }

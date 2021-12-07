@@ -1,26 +1,23 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *print_array - display n characters of an array
- *@a: pointer to array
- *@n: integer
+ * print_array - Function to print a complete array
+ * @a: Parameter
+ * @n: Parameter
  */
 void print_array(int *a, int n)
 {
-	int i;
+	int b;
 
-	if (n >= 0)
+	for (b = 0 ; b < n ; b++)
 	{
-		for (i = 0; i < n; i++)
+		printf("%d", a[b]);
+		if (b == n - 1)
 		{
-			printf("%d", a[i]);
-			if (i == n - 1)
-				break;
-			printf(", ");
+			break;
 		}
-		printf("\n");
-	} else
-	{
-	printf("\n");
+		putchar(',');
+		putchar(' ');
 	}
+	putchar('\n');
 }
