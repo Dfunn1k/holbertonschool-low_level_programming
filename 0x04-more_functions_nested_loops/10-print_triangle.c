@@ -1,31 +1,34 @@
 #include "main.h"
 /**
- *
- *
- *
- *
- *
+ * print_triangle - Function to print triangle
+ * @size: Parameter
+ * Return: Return value "n"
  */
-
 void print_triangle(int size)
 {
-	int i, a, b, spa, sharp;
-	sharp = 1;
-	spa = size - 1; 
-	
-	
-	for(i = 1; i <= size; i++)
+	int n;
+	int i;
+	int j;
+	int k;
+
+	n = size;
+	if (n >= 1)
 	{
-		for(a = 1; i <= spa; a++)	
+		for (i = n ; i > 0 ; i--)
 		{
-			_putchar(32);
+			for (j = 0 ; j < (i - 1) ; j++)
+			{
+				_putchar(' ');
+			}
+			for (k = 0 ; k <= (n - i) ; k++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
-		for(b = 1; b <= sharp ; b++)
-		{
-			_putchar(35);
-		}
-	_putchar(10);
-	sharp= sharp + 1;
-	spa= spa - 1;
-	}		
+	}
+	if (n < 1)
+	{
+		_putchar('\n');
+	}
 }
