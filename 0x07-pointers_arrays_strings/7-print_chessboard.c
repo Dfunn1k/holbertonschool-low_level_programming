@@ -5,15 +5,12 @@
  */
 void print_chessboard(char (*a)[8])
 {
-	int row;
-	int column;
+	int x = 0, y = 0;
 
-	for (row = 0 ; row < 8 ; row++)
+	for (x = 0; x < 8; x++)
 	{
-		for (column = 0 ; column < 8 ; column++)
-		{
-			_putchar(a[row][column]);
-		}
-		_putchar('\n');
+		for (y = 0; y < 8; y++)
+			_putchar(a[x][y]);
+		_putchar(10);
 	}
 }
