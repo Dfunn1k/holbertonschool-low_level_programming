@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _strcpy - Function to print a complete string in reverse
  * @dest: Parameter
