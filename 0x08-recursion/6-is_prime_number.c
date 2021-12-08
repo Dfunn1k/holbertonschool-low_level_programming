@@ -1,12 +1,4 @@
 #include "main.h"
-/**
- *_pow_recursion - x raised to the power of y
- *@x: integer number
- *@y: integer number
- *
- *Return: x raised to the power of y, -1 if y < 0
- */
-#include "main.h"
 int prime(int n, int i);
 /**
  * is_prime_number - says if an integer is a prime number or not
