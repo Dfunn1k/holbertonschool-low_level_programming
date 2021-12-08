@@ -1,35 +1,38 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+#include "main.h"
 /**
- *main - print the result off adds positive numbers
- *
- *
- *
- *
+ * main - prints the name of the program, followed new line
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
-	int i, sum;
+	int i, j, x, res, sum;
 
-	sum = 0;
-	
-	if(argc == 1)
+	if (argc > 0)
 	{
-		printf("0\n");
-	}
-
-	for(i = 1; i < argc; i++)
-	{
-		if(isdigit(argv[i]) == 0)
+		for (i = 1; i < argc; i++)
 		{
-			printf("Error\n");
-			return (1);
-		} else
-		{
-			sum += atoi(argv[i]);
+			for (j = 0; argv[i][j] != 0; j++)
+			{
+				if (argv[i][j] < 48 || argv[i][j] > 57)
+				{
+					puts("Error");
+					return (1);
+				}
+			}
 		}
+		for (x = 1; x < argc; x++)
+		{
+			res = atoi(*(argv + x));
+			sum += res;
+		}
+		printf("%d\n", sum);
 	}
-	printf("%d\n", sum);	
-return (0);
+	else
+		printf("0\n");
+	return (0);
 }
+
