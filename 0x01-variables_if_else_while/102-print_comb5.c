@@ -24,11 +24,11 @@ int main(void)
 						putchar(32);
 						putchar(c3);
 						putchar(c4);
-					}
-					if (c1 != 57 || c2 != 56)
-					{
-						putchar(44);
-						putchar(32);
+						if (c1 != 57 || c2 != 56)
+						{
+							putchar(44);
+							putchar(32);
+						}
 					}
 					c4++;
 				}
