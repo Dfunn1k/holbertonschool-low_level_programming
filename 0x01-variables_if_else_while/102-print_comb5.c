@@ -17,18 +17,16 @@ int main(void)
 			{
 				while (c4 < 58)
 				{
-					if (c2 != c3 || c4 != c1)
+					
+					putchar(c1);
+					putchar(c2);
+					putchar(32);
+					putchar(c3);
+					putchar(c4);
+					if (c1 != 57 || c2 != 56)
 					{
-						putchar(c1);
-						putchar(c2);
+						putchar(44);
 						putchar(32);
-						putchar(c3);
-						putchar(c4);
-						if (c1 != 57 || c2 != 56)
-						{
-							putchar(44);
-							putchar(32);
-						}
 					}
 					c4++;
 				}
