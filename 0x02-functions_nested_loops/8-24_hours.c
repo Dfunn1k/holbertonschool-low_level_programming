@@ -14,27 +14,25 @@ void jack_bauer(void)
 		{
 			if (dh == 50 && uh == 52)
 				break;
-			else
+
+			while (dm < 54)
 			{
-				while (dm < 54)
+				while (um < 58)
 				{
-					while (um < 58)
-					{
-						_putchar(dh);
-						_putchar(uh);
-						_putchar(':');
-						_putchar(dm);
-						_putchar(um);
-						_putchar(10);
-						um++;
-					}
-					um = 48;
-					dm++;
+					_putchar(dh);
+					_putchar(uh);
+					_putchar(':');
+					_putchar(dm);
+					_putchar(um);
+					_putchar(10);
+					um++;
 				}
 				um = 48;
-				dm = 48;
-				uh++;
+				dm++;
 			}
+			um = 48;
+			dm = 48;
+			uh++;
 		}
 		um = 48;
 		dm = 48;
