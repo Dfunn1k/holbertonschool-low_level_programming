@@ -17,7 +17,6 @@ int main(void)
 			{
 				while (c4 < 58)
 				{
-					
 					putchar(c1);
 					putchar(c2);
 					putchar(32);
