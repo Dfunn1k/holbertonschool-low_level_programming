@@ -21,14 +21,14 @@ void times_table(void)
 				_putchar(ld + 48);
 			}
 			else
+			{
+				if (num2 != 0)
+					_putchar(32);
 				_putchar(mul + 48);
+			}
 			if (num2 != 9)
 			{
 				_putchar(44);
-				_putchar(32);
-			}
-			if (fd <= 0)
-			{
 				_putchar(32);
 			}
 			num2++;
