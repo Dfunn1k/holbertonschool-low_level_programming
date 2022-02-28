@@ -16,7 +16,7 @@ int main(void)
 	{
 		sum = num1 + num2;
 		printf("%ld", sum);
-		if (count != 50)
+		if (count != 51)
 			printf(", ");
 		num1 = num2;
 		num2 = sum;
