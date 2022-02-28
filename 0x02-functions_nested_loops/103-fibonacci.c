@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - finds and prints the sum of the even-valued terms 
+ * main - finds and prints the sum of the even-valued terms
  * Return: success(0)
  */
 
@@ -13,15 +13,10 @@ int main(void)
 	{
 		tmp = num1 + num2;
 		if (tmp % 2 == 0)
-		{
-			printf("%d", tmp);
 			sum += tmp;
-			if (tmp != 3524578)
-				printf(", ");
-		}
 		num1 = num2;
 		num2 = tmp;
 	}
-	putchar(10);
+	printf("%d\n", sum);
 return (0);
 }
