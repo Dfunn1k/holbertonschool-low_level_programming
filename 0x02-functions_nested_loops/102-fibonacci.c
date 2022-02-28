@@ -10,8 +10,6 @@ int main(void)
 	long int num1 = 0, num2 = 1, sum;
 	short int count = 2;
 
-	printf("0, 1, ");
-
 	while (count <= 51)
 	{
 		sum = num1 + num2;
