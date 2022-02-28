@@ -12,7 +12,7 @@ int main(void)
 
 	printf("0, 1, ");
 
-	while (count <= 50)
+	while (count <= 51)
 	{
 		sum = num1 + num2;
 		printf("%ld", sum);
