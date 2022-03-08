@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers - prints numbers from 0 to 14, 10 times 
+ * more_numbers - prints numbers from 0 to 14, 10 times
  */
 
 void more_numbers(void)
@@ -24,9 +24,8 @@ void more_numbers(void)
 					_putchar(num2);
 					num2++;
 				}
-				else {
+				else
 					break;
-				}
 			}
 			num2 = 48;
 			num1++;
