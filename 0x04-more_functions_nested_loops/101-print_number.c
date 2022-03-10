@@ -20,7 +20,7 @@ void print_number(int n)
 
 	tmp = n;
 
-	while (tmp > 0)
+	while (tmp > 0) /* Contador de digitos */
 	{
 		tmp /= 10;
 		digits++;
@@ -28,7 +28,7 @@ void print_number(int n)
 
 	tmp2 = digits;
 
-	while (tmp2 > 1)
+	while (tmp2 > 1) /* calcular el divisor segun la cantidad de digitos */
 	{
 		divisor *= 10;
 		tmp2--;
@@ -37,7 +37,7 @@ void print_number(int n)
 	if (digits == 1 || n == 0)
 		_putchar(n + 48);
 	else
-	{
+	{	 /*imprimiendo digitos de izquierda a derecha */
 		for (i = 0; i < digits; divisor /= 10)
 		{
 			qcient = n / divisor;
