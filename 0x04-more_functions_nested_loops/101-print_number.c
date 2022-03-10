@@ -7,7 +7,7 @@
 
 void print_number(int n)
 {
-	int tmp, tmp2, digits, qcient, i, divisor;
+	unsigned int tmp, tmp2, digits, qcient, i, divisor;
 
 	digits = 0;
 	divisor = 1;
