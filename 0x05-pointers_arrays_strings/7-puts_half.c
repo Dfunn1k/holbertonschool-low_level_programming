@@ -29,7 +29,7 @@ void puts_half(char *str)
 		limit = (count - 1) / 2;
 		cp += limit + 1;
 	}
-	
+
 	while (*cp != '\0')
 	{
 		_putchar(*cp);
