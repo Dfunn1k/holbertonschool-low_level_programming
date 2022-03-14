@@ -8,8 +8,8 @@
 
 int _atoi(char *s)
 {
-	int i, num = 0, signo = 1;
-	unsigned int mult = 1;
+	int i, signo = 1;
+	unsigned int mult = 1, num = 0;
 	char *tmpp;
 
 	while (*s != '\0') /* Recorremos la cadena hasta encontrar un número */
