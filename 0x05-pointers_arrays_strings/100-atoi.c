@@ -8,22 +8,21 @@
 
 int _atoi(char *s)
 {
-	int i, num;
-	unsigned int mult;
-	char *sp, *tmpp;
-
-	num = 0;
-	mult = 1;
+	int i, num = 0, signo = 1;
+	unsigned int mult = 1;
+	char *tmpp;
 
 	while (*s != '\0') /* Recorremos la cadena hasta encontrar un número */
 	{
+		if (*s == '+')
+			signo *= 1;
+		if (*s == '-')
+			signo *= -1;
+
 		if (*s < 58 && *s > 47)
 			break;
 		s++;
 	}
-
-	/* Guardamos la ubicación del caracter anterior al número para el signo*/
-	sp = s - 1;
 	/* Guardamos la ubicación del caracter dónde se encontró un número*/
 	tmpp = s;
 	s++;
@@ -34,7 +33,6 @@ int _atoi(char *s)
 		mult *= 10;
 		s++;
 	}
-
 	/* Multiplicamos el primer digito por mul y así sucesivamente*/
 	for (i = 0; *tmpp != '\0'; mult /= 10)
 	{
@@ -43,8 +41,8 @@ int _atoi(char *s)
 		i++;
 	}
 
-	if (*sp == '-') /* volvemos negativo el número si se necesita*/
-		num *= -1;
+	if (signo < 0)
+		return (num * -1);
 
 	return (num);
 }
