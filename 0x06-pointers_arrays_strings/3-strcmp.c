@@ -21,9 +21,9 @@ int _strcmp(char *s1, char *s2)
 		if (s1[x] == s2[x])
 			x++;
 		else if (s1[x] > s2[x])
-			return (1);
+			return (s1[x] - s2[x]);
 		else
-			return (-1);
+			return (s2[x] - s1[x]);
 	}
 
 	return (0);
