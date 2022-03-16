@@ -16,7 +16,8 @@ char *cap_string(char *str)
 	int state;
 
 	tmpp = str;
-	*str -= 32;
+	if (*str < 123 && *str > 96)
+		*str -= 32;
 
 	while (*str != '\0')
 	{
