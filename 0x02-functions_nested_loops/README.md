@@ -43,7 +43,7 @@ Prints `_putchar`, followed by a new line.
 ### 1-alphabet.c
 Prints the alphabet, in lowercase, followed by a new line.
 - Prototype: `void print_alphabet(void);`.
-- You can only use `_putchar` twice in your code.
+- You can only use `_putchar` twice in your code
 
 ### 2-print_alphabet_x10.c
 Prints 10 times the alphabet, in lowercase, followed by a new line.
