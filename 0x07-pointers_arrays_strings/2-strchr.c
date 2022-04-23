@@ -9,9 +9,18 @@
 
 char *_strchr(char *s, char c)
 {
-	int i;
+	int i, count;
+	char *tmpp;
 
-	for (i = 0; *s != '\0'; i++)
+	count = 1;
+	tmpp = s;
+
+	while (*tmpp != '\0')
+	{
+		count++;
+		tmpp++;
+	}
+	for (i = 0; i <= count; i++)
 	{
 		if (*s == c)
 		{
