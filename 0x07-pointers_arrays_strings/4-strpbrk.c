@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * @brief
- *
- * @param s
- * @param accept
- * @return char*
+ * _strpbrk - searches a string for any of a set of bytes
+ * @s: the string where the occurrences should be searched
+ * @accept: the string that will be found in s
+ * Return: a pointer in the first ocurrence
  */
 
 char *_strpbrk(char *s, char *accept)
