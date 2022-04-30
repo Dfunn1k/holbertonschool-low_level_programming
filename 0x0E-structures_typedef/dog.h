@@ -1,5 +1,6 @@
 #ifndef HOLBERTON
 #define HOLBERTON
+#include <stdlib.h>
 
 /**
  * struct dog - Struct for dogs
