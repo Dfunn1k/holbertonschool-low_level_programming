@@ -3,7 +3,7 @@
 /**
  * print_list - prints all elements of a list_t list
  * @h: pointer to struct
- * @return: size_t of nodes
+ * Return: size_t of nodes
  */
 
 size_t print_list(const list_t *h)
@@ -17,7 +17,7 @@ size_t print_list(const list_t *h)
 	while (ptr != NULL)
 	{
 		count++;
-		if (ptr->str ==NULL)
+		if (ptr->str == NULL)
 			printf("[0] (nil)\n");
 		else
 			printf("[%d] %s\n", ptr->len, ptr->str);
