@@ -1,6 +1,26 @@
 #include "lists.h"
 
 /**
+ * dlistint_len - count the number of nodes
+ * @h: pointer to hed of list
+ * Return: the number of nodes
+ */
+
+size_t dlistint_len(const dlistint_t *h)
+{
+	const dlistint_t *ptr;
+
+	if (h == NULL)
+		return (0);
+
+	ptr = h;
+	if (ptr->next == NULL)
+		return (1);
+	else
+		return (1 + dlistint_len(ptr->next));
+}
+
+/**
  * get_dnodeint_at_index - returns the nth node of a dlistint_t linked lists
  * @head: pointer to head of the list
  * @index: nth nodo
