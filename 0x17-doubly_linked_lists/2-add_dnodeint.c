@@ -4,6 +4,7 @@
  * add_dnodeint - add node at beginning of a list
  * @head: pointe to pointer to head
  * @n: the value
+ * Return: address of the node added
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
@@ -25,7 +26,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		*head = new;
 		return (*head);
 	}
-	
+
 	new->next = ptr;
 	ptr->prev = new;
 	*head = new;
