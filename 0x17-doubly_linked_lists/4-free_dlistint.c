@@ -1,6 +1,26 @@
 #include "lists.h"
 
 /**
+ * dlistint_len - count the number of nodes
+ * @h: pointer to hed of list
+ * Return: the number of nodes
+ */
+
+size_t dlistint_len(const dlistint_t *h)
+{
+	const dlistint_t *ptr;
+
+	if (h == NULL)
+		return (0);
+
+	ptr = h;
+	if (ptr->next == NULL)
+		return (1);
+	else
+		return (1 + dlistint_len(ptr->next));
+}
+
+/**
  * free_dlistint - function that free a doubly linked list
  * @head: pointer to head
  */
