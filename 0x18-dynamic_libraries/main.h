@@ -1,5 +1,5 @@
-#ifndef DYNAMICS_LIBRARYS
-#define DYNAMICS_LIBRARYS
+#ifndef MAIN_H
+#define MAIN_H
 
 int _putchar(char c);
 int _islower(int c);
