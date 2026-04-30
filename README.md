@@ -1,57 +1,64 @@
-# Holberton School - Low Level Programming
+# Holberton School – Low Level Programming
 
-Este repositorio reúne ejercicios y proyectos de **programación en C** desarrollados durante la ruta de *Low Level Programming* en Holberton School.
+Repositorio académico de práctica intensiva en **C** (fundamentos, memoria, estructuras de datos y herramientas de compilación).
 
-## Objetivo general
+## Objetivo
 
-Practicar los fundamentos del lenguaje C y la programación a bajo nivel, incluyendo:
+Fortalecer habilidades de programación de bajo nivel mediante ejercicios progresivos orientados a:
 
-- Compilación, preprocesado y depuración.
-- Control de flujo y funciones.
-- Punteros, arrays, strings y recursión.
-- Gestión de memoria dinámica.
-- Estructuras de datos lineales y no lineales.
-- Manipulación de bits, manejo de archivos y librerías.
+- Sintaxis y flujo de control en C.
+- Punteros, memoria dinámica y cadenas.
+- Listas enlazadas, tablas hash y manipulación de bits.
+- Entrada/salida de archivos, librerías y Makefiles.
 
-## Estructura del repositorio
+## Estructura de módulos
 
-Cada carpeta `0x..-...` corresponde a un módulo/tema específico. En general, dentro de cada módulo encontrarás:
+| Carpeta | Tema |
+|---|---|
+| `0x00-hello_world` | Introducción a C: compilación, preprocesado y primeros programas. |
+| `0x01-variables_if_else_while` | Variables, operadores, condicionales y bucles básicos. |
+| `0x02-functions_nested_loops` | Funciones en C, prototipos y bucles anidados. |
+| `0x03-debugging` | Depuración y análisis de errores lógicos/sintácticos. |
+| `0x04-more_functions_nested_loops` | Más práctica con funciones y estructuras de repetición. |
+| `0x05-pointers_arrays_strings` | Fundamentos de punteros, arreglos y cadenas. |
+| `0x06-pointers_arrays_strings` | Manipulación avanzada de strings y punteros. |
+| `0x07-pointers_arrays_strings` | Más ejercicios de memoria, arrays multidimensionales y cadenas. |
+| `0x08-recursion` | Resolución de problemas mediante recursión. |
+| `0x09-static_libraries` | Creación y uso de bibliotecas estáticas. |
+| `0x0A-argc_argv` | Argumentos de línea de comandos (`argc`, `argv`). |
+| `0x0B-malloc_free` | Memoria dinámica con `malloc` y `free`. |
+| `0x0C-more_malloc_free` | Asignación dinámica avanzada (`calloc`, `realloc`, etc.). |
+| `0x0D-preprocessor` | Macros y directivas del preprocesador en C. |
+| `0x0E-structures_typedef` | Uso de `struct` y `typedef`. |
+| `0x0F-function_pointers` | Punteros a funciones y callbacks básicos. |
+| `0x10-variadic_functions` | Funciones variádicas con `<stdarg.h>`. |
+| `0x12-singly_linked_lists` | Listas enlazadas simples: creación y recorrido. |
+| `0x13-more_singly_linked_lists` | Operaciones avanzadas sobre listas simplemente enlazadas. |
+| `0x14-bit_manipulation` | Operaciones bit a bit y conversión binaria. |
+| `0x15-file_io` | Entrada/salida de archivos con llamadas del sistema. |
+| `0x17-doubly_linked_lists` | Implementación de listas doblemente enlazadas. |
+| `0x18-dynamic_libraries` | Creación/carga de bibliotecas dinámicas. |
+| `0x1A-hash_tables` | Implementación de tablas hash y funciones hash. |
+| `0x1C-makefiles` | Automatización de compilación con `make` y Makefiles. |
+| `_PRINTF` | Proyecto colaborativo: implementación personalizada de `printf`. |
 
-- Archivos fuente `.c` con soluciones de ejercicios.
-- Archivos de cabecera `.h` (cuando aplica).
-- `README.md` local con la descripción de tareas del módulo.
+## Requisitos generales
 
-### Módulos principales
+- `gcc`
+- `make` (en proyectos que incluyen `Makefile`)
+- Estilo **Betty**
 
-- `0x00-hello_world`: introducción a C, compilación y primer programa.
-- `0x01-variables_if_else_while`: variables, condiciones y bucles.
-- `0x02-functions_nested_loops`: funciones y bucles anidados.
-- `0x03-debugging`: técnicas básicas de depuración.
-- `0x04-more_functions_nested_loops`: práctica adicional con funciones y bucles.
-- `0x05-pointers_arrays_strings` a `0x07-pointers_arrays_strings`: punteros, arrays y cadenas.
-- `0x08-recursion`: problemas resueltos con recursión.
-- `0x09-static_libraries`: creación y uso de librerías estáticas.
-- `0x0A-argc_argv`: argumentos de línea de comandos.
-- `0x0B-malloc_free` y `0x0C-more_malloc_free`: memoria dinámica con `malloc`, `free`, etc.
-- `0x0D-preprocessor`: macros y directivas del preprocesador.
-- `0x0E-structures_typedef`: estructuras y `typedef`.
-- `0x0F-function_pointers`: punteros a funciones.
-- `0x10-variadic_functions`: funciones variádicas.
-- `0x12-singly_linked_lists` y `0x13-more_singly_linked_lists`: listas enlazadas simples.
-- `0x14-bit_manipulation`: operaciones a nivel de bits.
-- `0x15-file_io`: entrada/salida de archivos en C.
-- `0x17-doubly_linked_lists`: listas doblemente enlazadas.
-- `0x18-dynamic_libraries`: creación y uso de librerías dinámicas.
-- `0x1A-hash_tables`: implementación y uso de tablas hash.
-- `0x1C-makefiles`: automatización de compilación con Make.
-- `_PRINTF`: implementación personalizada de `printf`.
+## Uso rápido
 
-## Requisitos habituales
+```bash
+# Entrar a un módulo
+cd 0x00-hello_world
 
-- Compilador `gcc`.
-- Estándar de compilación C (normalmente C89/C90 según proyecto).
-- Estilo de código requerido por Holberton/Betty (según módulo).
+# Compilar (ajustar según archivo/ejercicio)
+gcc -Wall -Wextra -Werror -pedantic -std=gnu89 4-puts.c -o 4-puts
+./4-puts
+```
 
 ## Nota
 
-Este repositorio tiene fines educativos y muestra una progresión de temas desde nivel básico hasta estructuras y utilidades más avanzadas en C.
+Este repositorio prioriza el aprendizaje y la legibilidad del proceso de resolución de problemas en C.
